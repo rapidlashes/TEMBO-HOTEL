@@ -9,7 +9,7 @@ The 'VISUALIZATION' folder houses our project report and dashboard which was don
 ### CLEANING DATA
 Data cleaning was done in the frist SQL script ,TEMBO(STAGING) where the `csv` table was loaded into a staging table having every column in `TEXT` format.
 
-sntax:
+syntax:
 ```SQL
 create table tembo.tembo_staging(
 booking_id text,
@@ -36,13 +36,18 @@ guest_rating text
 ```
 
 This is prior data transformation whre all columns will be converted into the correct data types and contstrains.
+
 The next step in cleaning the data was standardization. 
+
 Every column was handled individually.
+
 Names of guests, cities, room types etc were put into proper cases, dates into proper formats as well as numerics.
+
 Columns with numerical data were set to `NULL` where rows were missing data, while the ones with textual data set to `unknown` where rows were missing values.
-Some columns were left blank where rows were missing values, eg the column `service_used`. This was necessary since not all the guests who booked used those services .
-They were just but extra services offered by the hotel.
-Cleaning was necessary for consistency of data. 
+
+Some columns were left blank where rows were missing values, eg the column `service_used`. This was necessary since not all the guests who booked used those services .They were just but extra services offered by the hotel.
+
+Standardization necessary for consistency of data. 
 We do not want to have an instance where there are duplicate guests having the same name but written in different cases.
 
 ### PRODUCTION TABLE
@@ -87,7 +92,7 @@ from table_name;
 ```
 To see the content of your view, you can do this:
 ```SQL
-select * from v_completed_bookngs
+select * from v_completed_bookngs;
 ```
 
 The views will then be imported to power BI for visualisation and report.
@@ -101,6 +106,7 @@ Slicers are added to make the dashboard more interactive .
 <img width="1344" height="761" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/0f93ca2d-939a-4a4a-bc7a-59ea743d8292" />
 
 The final steps are generating insights and recommendations from our report.
+
 <img width="1354" height="795" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/cb7a1a3e-dba4-4b23-83ce-1be4d53a6172" />
 
 <img width="1233" height="682" alt="Screenshot (246)" src="https://github.com/user-attachments/assets/5f98a05d-d6c3-4e8b-aab6-183fe3d4727b" />
@@ -111,6 +117,6 @@ It basically shows you how the tables are related to one another , and what they
 
 <img width="827" height="702" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/75dd97f5-8d0e-4cc9-8002-d703de52049f" />
 
-# NOTE: For the dashboard to be interactive you have to establish relationships between the views you had imported and used to create the visuals with.
+### NOTE: For the dashboard to be interactive you have to establish relationships between the views you had imported.
 
 
