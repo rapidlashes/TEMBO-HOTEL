@@ -95,7 +95,8 @@ select * from v_completed_bookngs;
 
 The views will then be imported to power BI for visualisation and report.
 
-<img width="1920" height="1080" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/114eef28-3549-4143-bf38-ff948447c5e3" />
+<img width="1496" height="960" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/2ef79ace-ea2e-40fb-9157-ff4aa104381f" />
+
 
 ### VISUALIZATION AND REPORT
 We used views to create visuals and a dashbaord in power BI . 
