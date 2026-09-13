@@ -1,10 +1,7 @@
 ## PREREQUISITES
 We assumed guest ratings were out of 10, and the highest rating given by a guest being 6.
-
 The folder "RAW"  contains the raw `csv` file that needed cleaning before analysis. 
-
 The folder "SQL scripts" contains `SQL` files where data is cleaned and analyzed.
-
 The folder "VISUALIZATION" houses our project report and dashboard  done in power BI.
 
 ### CLEANING DATA
