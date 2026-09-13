@@ -48,7 +48,7 @@ Some columns were left blank where rows were missing values, eg the column `serv
 Standardization necessary for consistency of data. 
 We do not want to have an instance where there are duplicate guests having the same name but written in different cases.
 
-### PRODUCTION TABLE
+### DATA TRANSFORMATION
 Once data was cleaned, it was loaded into a production table which was created in a separate SQL script, TEMBO(PRODUCTION).
 
 syntax:
@@ -79,7 +79,7 @@ guest_rating        INTEGER
 
 The Data loaded here will be transformed in to the correct data type and constrains before analysis.
 
-### ANALYSIS
+### ANALYSIS OF DATA
 After data is analysed , views will be created which are temporary tables in our SQL environment.
 
 syntax:
